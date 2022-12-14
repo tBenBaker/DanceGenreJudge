@@ -213,8 +213,9 @@
             jsPsych.addNodeToEndOfTimeline({
                 timeline: [
                     {
-                        type: jsPsychHtmlKeyboardResponse,
-                        stimulus: "Your answers have been recorded, thank you! And thanks to AIST++ for the open dance dataset!\nPress any key to see your results.",
+                        type: jsPsychHtmlButtonResponse,
+                        stimulus: "Your answers have been recorded, thank you! And thanks to AIST++ for the open dance dataset!\nPress 'Results' to key to see your results.",
+                        choices: ["Results"]
                     },
                     {
                         type: jsPsychHtmlKeyboardResponse,
